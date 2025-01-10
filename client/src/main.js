@@ -7,7 +7,7 @@ function submitHandler(event) {
   const formData = new FormData(guestForm);
   const userData = Object.fromEntries(formData);
   console.log(userData);
-  fetch("http://localhost:8080/test", {
+  fetch("http://localhost:8080/guestbook", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
