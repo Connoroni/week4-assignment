@@ -8,6 +8,18 @@ app.use(express.json());
 app.use(cors());
 dotenv.config();
 
+export const db = new pg.Pool({
+  connectionString: process.env.DATABASE_URI,
+});
+
 app.listen(8080, () => {
   console.log("Server running on port 8080");
+});
+
+app.get("/", (req, res) => {
+  res.json("Test on root");
+});
+
+app.post("/test", (req, res) => {
+  console.log("Request body:", req.body);
 });
