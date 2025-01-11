@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: burlywood;
+}
+
+main {
+  background-color: aquamarine;
+}
+
+#guestbookComments {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.comment-box {
+  background-color: red;
+}

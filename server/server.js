@@ -44,3 +44,12 @@ app.post("/guestbook", async (req, res) => {
 });
 
 //It was the missing comma on line 39 the whole time, credit to Hannah for sending me her POST to compare and get it working
+
+app.get("/retrieve", async (req, res) => {
+  const query = await db.query(
+    `SELECT user_name, timestamp, comment FROM guestbook`
+  );
+  await res.json(query.rows);
+  const jsonData = query.rows;
+  console.log(jsonData);
+});
