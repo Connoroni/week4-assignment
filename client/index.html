@@ -5,44 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="src/main.js" defer></script>
-    <title>Guestbook Bestbook</title>
+    <title>Circus Guestbook</title>
   </head>
   <body>
     <header>
-      <h1>The Highway to Hull Travelling Circus</h1>
-      <h2>Digital Guestbook</h2>
+      <h1 class="title">The Highway to Hull Travelling Circus</h1>
+      <h2 class="title">Digital Guestbook</h2>
     </header>
     <main>
-      <div id="form-div">
+      <div id="formDiv">
         <form id="guest-form">
-          <label for="user_name-input" class="form-label"
-            >Please enter a username</label
-          >
-          <input
-            type="text"
-            name="user_name"
-            placeholder="Username"
-            id="user_name-input"
-            class="form-input"
-          />
-          <label for="comment-input" class="form-label"
-            >Type your comment here</label
-          >
-          <input
-            type="text"
-            name="comment"
-            placeholder="Comment"
-            id="comment-input"
-            class="form-input"
-          />
-          <button type="submit" id="submit-button">Submit</button>
+          <div id="user_name-div">
+            <label for="user_name-input" class="form-label"
+              >Please enter a username</label
+            >
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Username"
+              id="user_name-input"
+              class="form-input"
+              value=""
+            />
+          </div>
+          <div id="comment-div">
+            <label for="comment-input" class="form-label"
+              >Type your comment here</label
+            >
+            <textarea
+              type="text"
+              name="comment"
+              placeholder="Comment"
+              id="comment-input"
+              class="form-input"
+              value=""
+            ></textarea>
+            <button type="submit" id="submit-button">Submit</button>
+          </div>
         </form>
       </div>
-      <div id="guestbookComments">
-        <p>PLACEHOLDER UNTIL DATABASE IS DONE</p>
-        <p>PLACEHOLDER UNTIL DATABASE IS DONE</p>
-        <p>PLACEHOLDER UNTIL DATABASE IS DONE</p>
-      </div>
+      <section id="commentSection">
+        <div id="guestbookComments"></div>
+      </section>
     </main>
   </body>
 </html>

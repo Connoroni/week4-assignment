@@ -14,6 +14,10 @@ function submitHandler(event) {
     },
     body: JSON.stringify({ userData }),
   });
+  const nameInput = document.getElementById("user_name-input");
+  const commentInput = document.getElementById("comment-input");
+  nameInput.value = "";
+  commentInput.value = "";
 }
 
 // Not sure what went wrong with the function below but the error in the client console said that jsonResult wasn't defined in renderComments, so it must have been an issue with return (which I haven't tried using much before) so I just copied the important parts into the renderComments function

@@ -5,21 +5,116 @@
 }
 
 header {
-  background-color: burlywood;
+  background-image: url("https://t3.ftcdn.net/jpg/09/09/00/72/360_F_909007209_k3MzcwGr7BOfGyV1hsa3OCbRrSxPyTcb.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25vh;
+  padding-bottom: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-family: "Courier New", Courier, monospace;
 }
 
 main {
-  background-color: aquamarine;
+  background-color: cornflowerblue;
+}
+
+#formDiv {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user_name-div {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+
+#user_name-input {
+  margin-left: 0.5rem;
+  padding: 0.1rem;
+  padding-bottom: 0;
+  border-color: transparent;
+  border-bottom: 1px solid black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+#comment-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#comment-input {
+  width: 75vw;
+  height: 15vh;
+  border: 1px solid black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  resize: none;
+}
+
+#submit-button {
+  width: 10vw;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* I finally found a solution (probably not a perfect solution) to my problem of justify-self not working in firefox. I just need to set the margin on either side to auto.  */
+
+#commentSection {
+  display: flex;
+  justify-content: center;
 }
 
 #guestbookComments {
-  background-color: blue;
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  justify-content: space-around;
+  min-height: 100vh;
+  max-height: fit-content;
+  width: 75vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  margin-bottom: 2vw;
+  border-radius: 5%;
 }
 
 .comment-box {
-  background-color: red;
+  background-color: whitesmoke;
+  border-radius: 10%;
+  min-height: 5rem;
+  max-height: fit-content;
+  padding-left: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-username {
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.comment-timestamp {
+  padding-left: 1rem;
+  color: grey;
+  font-size: 0.75rem;
+}
+.comment-body {
+  padding: 0.5rem;
 }

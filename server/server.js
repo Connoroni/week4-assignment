@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 //   });
 
 app.post("/guestbook", async (req, res) => {
-  console.log("Request body:", req.body);
+  // console.log("Request body:", req.body);
   const data = req.body.userData;
   console.log("Data within request body:", data);
   const query = await db.query(
