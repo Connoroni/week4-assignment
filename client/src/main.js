@@ -7,7 +7,7 @@ function submitHandler(event) {
   const formData = new FormData(guestForm);
   const userData = Object.fromEntries(formData);
   console.log(userData);
-  fetch("http://localhost:8080/guestbook", {
+  fetch("https://week4-assignment-kbpo.onrender.com/guestbook", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -30,7 +30,9 @@ function submitHandler(event) {
 // getData();
 
 async function renderComments() {
-  const result = await fetch("http://localhost:8080/retrieve");
+  const result = await fetch(
+    "https://week4-assignment-kbpo.onrender.com/retrieve"
+  );
   const jsonResult = await result.json();
   const guestbook = document.getElementById("guestbookComments");
   for (let i = 0; i < jsonResult.length; i++) {
