@@ -9,6 +9,9 @@ I was able to pull together different functions and previous bits of code from o
 
 The only thing I was unable to achieve that I had hoped to was in truncating the timestamp so it was formatted nicer and didn't include seconds or milliseconds. I did some googling and asked a friend who knows SQL but I didn't understand any of their solutions. It's something I hope to revisit in the next few weeks once we've done more SQL.
 
+NEW PROBLEM HAS EMERGED
+I can't get the deployment working and I don't know what to do. Everything was working fine when running on local host but now after deploying the server is giving me a 502 bad gateway error so the data from the database isn't rendering on the client site. Google and the render documentation haven't given me anything about how to fix a 502 error that I understand at this point, so I have no idea how to proceed. I'll probably get a worse mark because it doesn't work at the deadline, but could I have some guidance on this specific issue please?
+
 **Sources**
 Differences between different timestamp constraints - https://stackoverflow.com/questions/5876218/difference-between-timestamps-with-without-time-zone-in-postgresql
 Inserting current timestamp in a query - https://stackoverflow.com/questions/38245025/how-to-insert-current-datetime-in-postgresql-insert-query
