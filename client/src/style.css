@@ -28,7 +28,7 @@ main {
 
 #formDiv {
   padding-top: 1rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,12 +87,13 @@ main {
   justify-content: space-around;
   min-height: 100vh;
   max-height: fit-content;
-  width: 75vw;
+  width: 90vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 2vw;
   padding-bottom: 2vw;
+  padding-top: 2vw;
   margin-bottom: 2vw;
+  margin-top: 1vw;
   border-radius: 5%;
 }
 
@@ -117,4 +118,21 @@ main {
 }
 .comment-body {
   padding: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  #form-div {
+    width: 800px;
+    padding-bottom: 5rem;
+  }
+  #comment-input {
+    width: 800px;
+  }
+  #submit-button {
+    width: 85px;
+  }
+  #guestbookComments {
+    width: 75vw;
+    margin-top: 2vw;
+  }
 }
