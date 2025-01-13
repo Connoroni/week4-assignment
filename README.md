@@ -12,6 +12,9 @@ The only thing I was unable to achieve that I had hoped to was in truncating the
 NEW PROBLEM HAS EMERGED
 I can't get the deployment working and I don't know what to do. Everything was working fine when running on local host but now after deploying the server is giving me a 502 bad gateway error so the data from the database isn't rendering on the client site. Google and the render documentation haven't given me anything about how to fix a 502 error that I understand at this point, so I have no idea how to proceed. I'll probably get a worse mark because it doesn't work at the deadline, but could I have some guidance on this specific issue please?
 
+Error message:Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://week4-assignment-kbpo.onrender.com/retrieve. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 502.
+It's a CORS issue but I can't find anything on how to fix it or how to add that header myself. I'm adding this note after the deadline just to better explain what my issue was.
+
 **Sources**
 Differences between different timestamp constraints - https://stackoverflow.com/questions/5876218/difference-between-timestamps-with-without-time-zone-in-postgresql
 Inserting current timestamp in a query - https://stackoverflow.com/questions/38245025/how-to-insert-current-datetime-in-postgresql-insert-query
